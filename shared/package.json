@@ -1,0 +1,19 @@
+{
+  "name": "@voltify/shared",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Code shared by the API and the web app: battery simulator, vendor adapters, AI engine and the Voltify platform logic (incidents, driver notifications, webhook events).",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc -p tsconfig.json"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.3"
+  }
+}

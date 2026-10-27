@@ -1,0 +1,386 @@
+{
+  "nav": {
+    "aria": "Main navigation",
+    "overview": "Overview",
+    "driver": "Driver app",
+    "console": "Operations console",
+    "integration": "API integration"
+  },
+  "footer": "Voltify MVP · All data on this page is simulated (no fleet shares real data yet). Voltify is an early-warning aid; it does not replace the battery's BMS.",
+  "ui": {
+    "language": "Change language",
+    "theme": "Switch light/dark theme",
+    "close": "Close"
+  },
+  "data": {
+    "simulated": "Simulated data",
+    "simulatedHint": "The 40 vehicles, packs and drivers come from the PoC's physics simulator. The AI sees telemetry only, as it would in production."
+  },
+  "source": {
+    "connecting": "Connecting…",
+    "live": "Live",
+    "error": "Disconnected",
+    "browser": "Running in the browser",
+    "server": "API server",
+    "browserHint": "The simulator and the Voltify platform run in this tab's Web Worker; no server needed."
+  },
+  "sim": {
+    "clock": "Simulated time",
+    "play": "Resume",
+    "pause": "Pause",
+    "speed": "Simulation speed",
+    "speedHint": "{{n}} times real time"
+  },
+  "time": {
+    "justNow": "just now",
+    "minAgo": "{{n}} min ago",
+    "hAgo": "{{n}} h {{m}} min ago"
+  },
+  "level": {
+    "safe": "Safe",
+    "watch": "Watch",
+    "warning": "Warning",
+    "danger": "Danger"
+  },
+  "scoreRange": {
+    "safe": "(0–24)",
+    "watch": "(25–49)",
+    "warning": "(50–74)",
+    "danger": "(75–100)"
+  },
+  "driverStatus": {
+    "good": "Normal",
+    "attention": "Keep an eye",
+    "check": "Needs a check",
+    "stop": "Stop now"
+  },
+  "deliveryFor": {
+    "safe": "Nothing sent",
+    "watch": "Status line only, no interruption",
+    "warning": "Push notification + route to a swap station",
+    "danger": "Full-screen alert + operations team told"
+  },
+  "delivery": {
+    "in_app": "In app",
+    "push": "Push",
+    "critical": "Critical"
+  },
+  "tempBand": {
+    "normal": "Normal",
+    "warm": "Warm",
+    "hot": "Hot"
+  },
+  "healthBand": {
+    "good": "Good",
+    "fair": "Fair",
+    "weak": "Worn",
+    "unknown": "Assessing"
+  },
+  "healthHint": {
+    "good": "Full range as usual",
+    "fair": "Slightly shorter range",
+    "weak": "Swap for another pack soon",
+    "unknown": "Needs a few minutes of data"
+  },
+  "activity": {
+    "riding": "Riding",
+    "stopped": "Stopped",
+    "charging": "Charging",
+    "offline": "No signal"
+  },
+  "role": {
+    "normal": "normal",
+    "severe": "will overheat from overload",
+    "short": "internal short",
+    "heavy": "heavy load, climbs",
+    "aged": "aged pack",
+    "weakCell": "weak cell"
+  },
+  "signal": {
+    "unexplained_heat": "Abnormal heat in the pack (not explained by the load)",
+    "eta_to_limit": "Forecast to reach the 65°C cut-off",
+    "core_temp": "High pack core temperature",
+    "cell_sag": "One cell group sagging against the others (cell {{cell}})",
+    "cell_drift": "One cell group drifting away from the rest (cell {{cell}})",
+    "weak_cell": "Cell group with high resistance (cell {{cell}})",
+    "cell_voltage_limit": "Cell voltage outside its limits",
+    "overload_crate": "Discharge current above what the pack can take at this temperature",
+    "hot_charge": "Charging while the pack is still hot",
+    "low_soh": "Worn pack (low state of health)"
+  },
+  "reasons": {
+    "none": "No abnormal signal.",
+    "valueVs": "Now {{value}} · counts from {{threshold}}"
+  },
+  "phone": {
+    "appName": "Delivery app",
+    "appNote": "a partner's app (mock-up)",
+    "now": "now",
+    "battery": "Bike battery",
+    "poweredBy": "Voltify",
+    "charging": "Charging",
+    "rangeLeft": "range left",
+    "status": "Battery status",
+    "temperature": "Temperature",
+    "health": "Battery health",
+    "packId": "Pack id",
+    "learning": "Voltify is getting to know this pack (first few minutes after fitting).",
+    "checkedEvery": "Voltify checks the battery continuously, every 5 to 15 seconds.",
+    "navigate": "Directions",
+    "callSupport": "Call support",
+    "toStation": "Swap at {{station}} · {{km}}",
+    "calling": "Calling the operations desk… (simulated)",
+    "navigating": "Directions to station {{station}}",
+    "confirmStopped": "I have stopped safely",
+    "criticalNote": "This screen closes only once you confirm you have stopped.",
+    "inboxEmpty": "No notifications yet.",
+    "task": {
+      "riding": "",
+      "heading_to_station": "On the way to swap station {{station}}",
+      "swapping": "Swapping the battery at {{station}}…",
+      "stopped_waiting": "You have stopped. The operations team is bringing a new pack."
+    },
+    "taskLeft": {
+      "riding": "",
+      "heading_to_station": "About {{n}} min to go",
+      "swapping": "Done in about {{n}} min",
+      "stopped_waiting": "Expected in {{n}} min. Stay at least 5 metres from the bike."
+    },
+    "order": {
+      "title": "Current delivery #DH-2041",
+      "status": "In progress",
+      "pickup": "Pick-up: 12 Nguyen Hue, D.1",
+      "dropoff": "Drop-off: 88 Vo Van Tan, D.3 · 2.4 km",
+      "note": "This part is the partner's own content, not Voltify's."
+    },
+    "tab": {
+      "home": "Home",
+      "battery": "Battery",
+      "inbox": "Inbox"
+    }
+  },
+  "driver": {
+    "title": "Driver app: Voltify inside a partner's app",
+    "intro": "Drivers install nothing new. The partner (vehicle maker, delivery company, swap network) receives Voltify's webhooks and shows the battery status and alerts in its own app. You are playing the driver: tap the phone as a driver would.",
+    "phoneCaption": "The partner app is a mock-up. The “Bike battery” card and the notifications use exactly what Voltify sends over the API.",
+    "presenter": "Demo controls",
+    "pick": "Driver",
+    "injectShort": "Cause a fault: internal short",
+    "drain": "Run the battery low",
+    "jumpToIncident": "Switch to a vehicle in trouble",
+    "manualNote": "The selected vehicle does not react by itself: tap “Directions” or “I have stopped” on the phone. After a fault starts, the AI needs about 15 to 25 simulated minutes to detect it (a few tens of seconds at {{speed}}×). Change the speed in the top bar.",
+    "behind": "Behind it: what Voltify computed",
+    "learning": "The AI is still getting to know this pack, so there is no score yet.",
+    "mapAi": "Risk level (Risk Score)",
+    "mapDriver": "Driver sees",
+    "mapHow": "How it is delivered",
+    "principles": "What a driver is shown",
+    "show": "Shown",
+    "hide": "Not shown",
+    "showList": [
+      "Battery % and km left",
+      "Status in four words, with colour and icon",
+      "One sentence on what to do",
+      "Nearest swap station and directions",
+      "A call-support button"
+    ],
+    "hideList": [
+      "The Risk Score and technical numbers",
+      "Cell voltages, resistance, current",
+      "Watch-level alerts (avoid nagging false alarms)",
+      "Promises of “absolute safety”"
+    ],
+    "webhook": "Latest webhook sent for this vehicle",
+    "noWebhook": "No notification for this vehicle yet.",
+    "webhookNote": "The partner app only reads title, body (already in Vietnamese and English) and delivery to pick how to show it. No AI knowledge needed."
+  },
+  "console": {
+    "title": "Fleet operations console",
+    "intro": "For the fleet manager watching remotely: which vehicles are on the road, which are in trouble, what the driver has been told, and who is handling it. Every alert comes with its reasons and buttons to confirm it or mark it a false alarm.",
+    "managerName": "Shift manager",
+    "mapAria": "Fleet map",
+    "mapOffline": "Map tiles could not be loaded (offline); vehicle positions are still correct.",
+    "station": "Station {{id}}",
+    "incidents": "Incidents",
+    "tab": {
+      "active": "Open",
+      "resolved": "Closed"
+    },
+    "noIncidents": "No open incident.",
+    "noResolved": "No incident closed yet.",
+    "openedAt": "opened {{time}} · {{ago}}",
+    "sentTo": "Driver sent to station {{id}} ({{km}})",
+    "chip": {
+      "notified": "Driver notified",
+      "confirmed": "Driver confirmed",
+      "waiting": "Not taken yet"
+    },
+    "ack": "Take",
+    "call": "Call driver",
+    "closeConfirmed": "Close · real alert",
+    "labelConfirmed": "Real alert",
+    "falseAlarm": "False alarm",
+    "labelHint": "The manager's labels measure the AI's real precision during a pilot",
+    "vehicles": "Vehicles ({{n}})",
+    "filterAll": "All",
+    "filterMaintenance": "Pack due",
+    "search": "Search plate, driver, pack",
+    "col": {
+      "vehicle": "Vehicle",
+      "driver": "Driver",
+      "risk": "Risk",
+      "soc": "Battery",
+      "temp": "Temp.",
+      "soh": "Health",
+      "activity": "Activity",
+      "pack": "Pack"
+    },
+    "learning": "Learning new pack",
+    "maintenanceDue": "Pack due for replacement",
+    "range": "Range",
+    "chart": {
+      "temp": "Temperature (1 h)",
+      "soc": "Battery % (1 h)",
+      "score": "Risk Score (1 h)"
+    },
+    "why": "Why the AI scored it so",
+    "timeline": "Incident {{id}} timeline",
+    "sentToDriver": "Sent to the driver",
+    "nothingSent": "Nothing sent.",
+    "seen": "seen",
+    "openAsDriver": "View as this vehicle's driver"
+  },
+  "incidentStatus": {
+    "open": "Not taken",
+    "acknowledged": "In progress",
+    "resolved": "Closed"
+  },
+  "resolution": {
+    "pack_swapped": "Pack swapped",
+    "manager_closed": "Closed by manager"
+  },
+  "label": {
+    "confirmed": "Confirmed: real alert",
+    "false_alarm": "Marked: false alarm"
+  },
+  "timeline": {
+    "opened": "Incident opened at {{level}}",
+    "escalated": "Raised to {{level}}",
+    "driver_notified": "Driver notified",
+    "driver_confirmed": "Driver tapped to confirm",
+    "acknowledged": "Taken by {{by}}",
+    "driver_called": "{{by}} called the driver",
+    "bms_limit": "Temperature reached the BMS cut-off",
+    "risk_normalised": "Risk back to safe",
+    "pack_swapped": "Pack {{pack}} fitted at {{station}}",
+    "resolved": "Incident closed"
+  },
+  "kpi": {
+    "online": "Vehicles online",
+    "unacknowledged": "Not taken",
+    "openOf": "{{n}} open incidents",
+    "ack": "Response (median)",
+    "ackHint": "minutes from alert to taken",
+    "maintenance": "Packs due",
+    "labeled": "{{pct}}% of alerts labelled",
+    "labeledNone": "no alert closed yet",
+    "openIncidents": "Open incidents",
+    "notifications": "Notifications sent",
+    "minutes": "{{n}} min"
+  },
+  "overview": {
+    "kicker": "Voltify · B2B, API + webhook",
+    "headline": "Early warning of e-moped battery fire risk, right inside the app drivers already use.",
+    "sub": "Voltify takes battery telemetry from the vehicle maker or the fleet, its AI scores the risk and explains why, then a webhook lets the partner's app tell the driver in plain words. Fleet managers follow everything on one screen.",
+    "ctaDriver": "See the driver app",
+    "ctaConsole": "Open the operations console",
+    "flowTitle": "Where Voltify sits in a partner's system",
+    "flow": {
+      "bms": {
+        "title": "Pack + BMS",
+        "body": "Cell voltages, current, temperature, SOC"
+      },
+      "vendor": {
+        "title": "Maker / fleet server",
+        "body": "Collects data, one format per vendor"
+      },
+      "voltify": {
+        "title": "Voltify API + AI",
+        "body": "Normalises, scores risk, opens incidents"
+      },
+      "webhook": {
+        "title": "Signed webhook",
+        "body": "Events + notification text in 2 languages"
+      },
+      "partner": {
+        "title": "Partner's app",
+        "body": "Shows battery status, pushes alerts"
+      },
+      "driver": {
+        "title": "Driver + manager",
+        "body": "Driver knows what to do; manager acts in the console"
+      }
+    },
+    "flowNote": "Partners neither build AI nor read battery numbers: they send data and get back the sentence to show. The web dashboard is for fleet managers and demos.",
+    "cards": {
+      "driver": {
+        "title": "Driver app",
+        "body": "A phone showing a partner app with Voltify inside: how much battery, how far it goes, when to swap or stop."
+      },
+      "console": {
+        "title": "Operations console",
+        "body": "Map of 40 vehicles in Ho Chi Minh City, an incident queue by severity, the AI's reasons, and take, call and close-with-label actions."
+      },
+      "integration": {
+        "title": "API integration",
+        "body": "Endpoints, HMAC-signed webhooks, the live event feed and sample code for a partner's developers."
+      }
+    },
+    "open": "Open",
+    "scriptTitle": "3-minute demo script",
+    "script": [
+      "Open the Driver app: battery normal, the driver only sees battery %, km and “Normal”.",
+      "Press “Cause a fault: internal short” at 20× or 60×. When the notification appears, pause (or drop to 5×) to explain it.",
+      "Within a few tens of seconds: a push “Your battery needs a check” with the nearest swap station.",
+      "With no reaction, the risk rises to Danger: a red full-screen “Stop now”.",
+      "Open the Operations console: the incident tops the queue with its reasons and “driver notified”. Take it, call the driver, close it with a label.",
+      "Open API integration: show the customer the webhook they would receive."
+    ],
+    "honestTitle": "Said plainly, to stay credible",
+    "honest": [
+      "All data is simulated; no fleet shares real data with the team yet. This MVP is meant to win the first pilot.",
+      "On the PoC's simulated data the AI reaches 91.9% recall, 65.8% precision and a 19.3 min mean lead time; the 30 to 45 min target is not met.",
+      "Voltify does not control vehicles; the MVP only monitors and alerts. Voltify supports the BMS, it does not replace it.",
+      "Range left is an estimate (assumes 22 Wh/km)."
+    ]
+  },
+  "integration": {
+    "title": "Integration: how a partner plugs Voltify in",
+    "intro": "Voltify is an API. A partner sends battery telemetry and gets incidents and driver notifications back by webhook. Everything on this page also runs on a real server (the api/ folder of the repo).",
+    "source": "Where this page gets its data",
+    "usingBrowser": "Running in the browser (Web Worker)",
+    "usingApi": "Connected to API server {{url}}",
+    "sourceHint": "By default the page simulates in the browser, so no server is needed. With `npm run dev:api` running, enter the server address and the page uses the same API a partner would (REST + Server-Sent Events).",
+    "connect": "Connect",
+    "useBrowser": "Back to browser mode",
+    "endpoints": "Main endpoints",
+    "ep": {
+      "telemetry": "Send telemetry (one message or a batch); vendor format detected",
+      "registerVehicle": "Register a vehicle, its driver and fitted pack",
+      "pack": "Report a pack swap",
+      "driverView": "Simplified battery status for the driver app",
+      "incidents": "Incidents, most severe first",
+      "ack": "A manager takes an incident",
+      "resolve": "Close an incident, label real/false alarm",
+      "notificationAck": "The app reports the driver tapped a notification",
+      "webhooks": "Subscribe a URL to events (returns the signing secret)",
+      "stream": "Live data stream (Server-Sent Events)",
+      "openapi": "API description, OpenAPI 3.1"
+    },
+    "auth": "Authenticate with the x-api-key header. Webhooks carry a Voltify-Signature header (HMAC-SHA256) so partners can check they come from Voltify; failed deliveries are retried after 1, 5 and 20 seconds.",
+    "feed": "Live webhook events",
+    "feedHint": "click a row for the JSON",
+    "sendTelemetry": "Send telemetry (curl)",
+    "receive": "Receive webhooks (partner side)"
+  }
+}

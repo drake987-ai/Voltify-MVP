@@ -1,0 +1,386 @@
+{
+  "nav": {
+    "aria": "Điều hướng chính",
+    "overview": "Tổng quan",
+    "driver": "App tài xế",
+    "console": "Trung tâm điều hành",
+    "integration": "Tích hợp API"
+  },
+  "footer": "Voltify MVP · Dữ liệu trên trang là mô phỏng (chưa có đội xe thật chia sẻ dữ liệu). Voltify là công cụ hỗ trợ cảnh báo sớm, không thay thế BMS của pin.",
+  "ui": {
+    "language": "Đổi ngôn ngữ",
+    "theme": "Đổi giao diện sáng/tối",
+    "close": "Đóng"
+  },
+  "data": {
+    "simulated": "Dữ liệu mô phỏng",
+    "simulatedHint": "40 xe, pin và tài xế đều do bộ mô phỏng vật lý của PoC sinh ra. AI chỉ nhìn thấy telemetry, như khi chạy thật."
+  },
+  "source": {
+    "connecting": "Đang kết nối…",
+    "live": "Đang chạy",
+    "error": "Mất kết nối",
+    "browser": "Chạy trong trình duyệt",
+    "server": "Máy chủ API",
+    "browserHint": "Bộ mô phỏng và nền tảng Voltify chạy trong Web Worker của tab này, không cần máy chủ."
+  },
+  "sim": {
+    "clock": "Giờ mô phỏng",
+    "play": "Chạy tiếp",
+    "pause": "Tạm dừng",
+    "speed": "Tốc độ mô phỏng",
+    "speedHint": "Nhanh gấp {{n}} lần thời gian thật"
+  },
+  "time": {
+    "justNow": "vừa xong",
+    "minAgo": "{{n}} phút trước",
+    "hAgo": "{{n}} giờ {{m}} phút trước"
+  },
+  "level": {
+    "safe": "An toàn",
+    "watch": "Theo dõi",
+    "warning": "Cảnh báo",
+    "danger": "Nguy hiểm"
+  },
+  "scoreRange": {
+    "safe": "(0–24)",
+    "watch": "(25–49)",
+    "warning": "(50–74)",
+    "danger": "(75–100)"
+  },
+  "driverStatus": {
+    "good": "Bình thường",
+    "attention": "Cần chú ý",
+    "check": "Cần kiểm tra",
+    "stop": "Dừng xe ngay"
+  },
+  "deliveryFor": {
+    "safe": "Không gửi gì",
+    "watch": "Chỉ đổi dòng trạng thái, không làm phiền",
+    "warning": "Thông báo đẩy + đường đến trạm đổi pin",
+    "danger": "Cảnh báo toàn màn hình + báo đội vận hành"
+  },
+  "delivery": {
+    "in_app": "Trong app",
+    "push": "Thông báo đẩy",
+    "critical": "Khẩn cấp"
+  },
+  "tempBand": {
+    "normal": "Bình thường",
+    "warm": "Hơi nóng",
+    "hot": "Nóng"
+  },
+  "healthBand": {
+    "good": "Tốt",
+    "fair": "Khá",
+    "weak": "Đã chai",
+    "unknown": "Đang đánh giá"
+  },
+  "healthHint": {
+    "good": "Đi xa như bình thường",
+    "fair": "Quãng đường hơi ngắn hơn",
+    "weak": "Nên sớm đổi pin khác",
+    "unknown": "Cần vài phút dữ liệu"
+  },
+  "activity": {
+    "riding": "Đang chạy",
+    "stopped": "Đang dừng",
+    "charging": "Đang sạc",
+    "offline": "Mất tín hiệu"
+  },
+  "role": {
+    "normal": "bình thường",
+    "severe": "sẽ quá nhiệt do quá tải",
+    "short": "đoản mạch ngầm",
+    "heavy": "chở nặng, leo dốc",
+    "aged": "pin chai",
+    "weakCell": "cell yếu"
+  },
+  "signal": {
+    "unexplained_heat": "Pin sinh nhiệt bất thường (không giải thích được bằng tải)",
+    "eta_to_limit": "Dự báo chạm ngưỡng ngắt 65°C",
+    "core_temp": "Nhiệt độ lõi pin cao",
+    "cell_sag": "Một cụm cell tụt áp so với các cụm khác (cell {{cell}})",
+    "cell_drift": "Một cụm cell lệch dần khỏi nhóm (cell {{cell}})",
+    "weak_cell": "Cụm cell có nội trở cao (cell {{cell}})",
+    "cell_voltage_limit": "Điện áp cell ra ngoài giới hạn",
+    "overload_crate": "Dòng xả vượt mức chịu được ở nhiệt độ hiện tại",
+    "hot_charge": "Đang sạc khi pin còn nóng",
+    "low_soh": "Pin đã chai (sức khỏe thấp)"
+  },
+  "reasons": {
+    "none": "Không có tín hiệu bất thường.",
+    "valueVs": "Hiện tại {{value}} · bắt đầu tính từ {{threshold}}"
+  },
+  "phone": {
+    "appName": "App giao hàng",
+    "appNote": "của đối tác (giao diện minh họa)",
+    "now": "bây giờ",
+    "battery": "Pin xe",
+    "poweredBy": "Voltify",
+    "charging": "Đang sạc",
+    "rangeLeft": "quãng đường còn lại",
+    "status": "Tình trạng pin",
+    "temperature": "Nhiệt độ",
+    "health": "Sức khỏe pin",
+    "packId": "Mã pin",
+    "learning": "Voltify đang làm quen với pin này (vài phút đầu sau khi lắp).",
+    "checkedEvery": "Voltify kiểm tra pin liên tục, mỗi 5 đến 15 giây.",
+    "navigate": "Chỉ đường",
+    "callSupport": "Gọi hỗ trợ",
+    "toStation": "Đổi pin tại {{station}} · {{km}}",
+    "calling": "Đang gọi tổng đài vận hành… (mô phỏng)",
+    "navigating": "Đang chỉ đường đến trạm {{station}}",
+    "confirmStopped": "Tôi đã dừng xe an toàn",
+    "criticalNote": "Màn hình này chỉ tắt khi bạn xác nhận đã dừng xe.",
+    "inboxEmpty": "Chưa có thông báo nào.",
+    "task": {
+      "riding": "",
+      "heading_to_station": "Đang đến trạm đổi pin {{station}}",
+      "swapping": "Đang đổi pin tại trạm {{station}}…",
+      "stopped_waiting": "Bạn đã dừng xe. Đội vận hành đang mang pin mới đến."
+    },
+    "taskLeft": {
+      "riding": "",
+      "heading_to_station": "Còn khoảng {{n}} phút",
+      "swapping": "Xong trong khoảng {{n}} phút",
+      "stopped_waiting": "Dự kiến đến sau {{n}} phút. Đứng cách xe ít nhất 5 mét."
+    },
+    "order": {
+      "title": "Đơn đang giao #DH-2041",
+      "status": "Đang giao",
+      "pickup": "Lấy hàng: 12 Nguyễn Huệ, Q.1",
+      "dropoff": "Giao đến: 88 Võ Văn Tần, Q.3 · 2,4 km",
+      "note": "Phần này là nội dung của app đối tác, không thuộc Voltify."
+    },
+    "tab": {
+      "home": "Trang chủ",
+      "battery": "Pin",
+      "inbox": "Thông báo"
+    }
+  },
+  "driver": {
+    "title": "App tài xế: Voltify nằm bên trong app của đối tác",
+    "intro": "Tài xế không cần cài thêm app. Đối tác (hãng xe, đơn vị giao hàng, trạm đổi pin) nhận webhook của Voltify và hiển thị trạng thái pin cùng cảnh báo ngay trong app của họ. Bạn đang đóng vai tài xế: hãy bấm trên điện thoại như tài xế thật.",
+    "phoneCaption": "Giao diện app đối tác là minh họa. Phần “Pin xe” và các thông báo lấy đúng nội dung Voltify gửi qua API.",
+    "presenter": "Bảng điều khiển demo",
+    "pick": "Chọn tài xế",
+    "injectShort": "Gây sự cố: đoản mạch ngầm",
+    "drain": "Làm pin gần hết",
+    "jumpToIncident": "Chuyển sang xe đang có sự cố",
+    "manualNote": "Xe đang chọn không tự phản ứng: hãy bấm “Chỉ đường” hoặc “Tôi đã dừng xe” trên điện thoại. Sau khi gây sự cố, AI cần khoảng 15 đến 25 phút mô phỏng để phát hiện (ở tốc độ {{speed}}× là vài chục giây). Đổi tốc độ ở thanh trên cùng.",
+    "behind": "Phía sau: Voltify tính ra gì",
+    "learning": "AI đang làm quen với pin này nên chưa chấm điểm.",
+    "mapAi": "Mức rủi ro (Risk Score)",
+    "mapDriver": "Tài xế thấy",
+    "mapHow": "Cách báo",
+    "principles": "Nguyên tắc hiển thị cho tài xế",
+    "show": "Hiển thị",
+    "hide": "Không hiển thị",
+    "showList": [
+      "% pin và số km còn lại",
+      "Tình trạng bằng 4 từ, có màu và biểu tượng",
+      "Một câu nói rõ phải làm gì",
+      "Trạm đổi pin gần nhất và đường đi",
+      "Nút gọi hỗ trợ"
+    ],
+    "hideList": [
+      "Risk Score và các con số kỹ thuật",
+      "Điện áp từng cell, nội trở, dòng điện",
+      "Cảnh báo ở mức Theo dõi (tránh báo động giả làm phiền)",
+      "Lời hứa “an toàn tuyệt đối”"
+    ],
+    "webhook": "Webhook gần nhất gửi cho xe này",
+    "noWebhook": "Chưa có thông báo nào cho xe này.",
+    "webhookNote": "App đối tác chỉ cần đọc title, body (đã có tiếng Việt và tiếng Anh) và delivery để chọn kiểu hiển thị. Không cần hiểu AI."
+  },
+  "console": {
+    "title": "Trung tâm điều hành đội xe",
+    "intro": "Màn hình cho quản lý đội xe theo dõi từ xa: xe nào đang chạy, xe nào gặp sự cố, tài xế đã được báo gì, và ai đang xử lý. Mỗi cảnh báo có lý do và có nút để quản lý xác nhận đúng hay báo nhầm.",
+    "managerName": "Quản lý ca",
+    "mapAria": "Bản đồ đội xe",
+    "mapOffline": "Không tải được bản đồ nền (đang offline); vị trí xe vẫn đúng.",
+    "station": "Trạm {{id}}",
+    "incidents": "Sự cố",
+    "tab": {
+      "active": "Đang mở",
+      "resolved": "Đã xử lý"
+    },
+    "noIncidents": "Không có sự cố nào đang mở.",
+    "noResolved": "Chưa có sự cố nào được xử lý.",
+    "openedAt": "mở lúc {{time}} · {{ago}}",
+    "sentTo": "Đã hướng dẫn tài xế đến trạm {{id}} ({{km}})",
+    "chip": {
+      "notified": "Đã báo tài xế",
+      "confirmed": "Tài xế đã xác nhận",
+      "waiting": "Chưa ai tiếp nhận"
+    },
+    "ack": "Tiếp nhận",
+    "call": "Gọi tài xế",
+    "closeConfirmed": "Đóng · cảnh báo đúng",
+    "labelConfirmed": "Cảnh báo đúng",
+    "falseAlarm": "Báo nhầm",
+    "labelHint": "Nhãn của quản lý dùng để đo độ chính xác thật của AI khi chạy pilot",
+    "vehicles": "Xe đang quản lý ({{n}})",
+    "filterAll": "Tất cả",
+    "filterMaintenance": "Pin cần thay",
+    "search": "Tìm biển số, tài xế, mã pin",
+    "col": {
+      "vehicle": "Xe",
+      "driver": "Tài xế",
+      "risk": "Rủi ro",
+      "soc": "Pin",
+      "temp": "Nhiệt độ",
+      "soh": "Sức khỏe",
+      "activity": "Hoạt động",
+      "pack": "Mã pin"
+    },
+    "learning": "Đang học pin mới",
+    "maintenanceDue": "Pin cần thay",
+    "range": "Còn đi",
+    "chart": {
+      "temp": "Nhiệt độ (1 giờ)",
+      "soc": "% pin (1 giờ)",
+      "score": "Risk Score (1 giờ)"
+    },
+    "why": "Vì sao AI đánh giá như vậy",
+    "timeline": "Diễn biến sự cố {{id}}",
+    "sentToDriver": "Đã gửi cho tài xế",
+    "nothingSent": "Chưa gửi gì.",
+    "seen": "đã xem",
+    "openAsDriver": "Xem như tài xế của xe này"
+  },
+  "incidentStatus": {
+    "open": "Chưa tiếp nhận",
+    "acknowledged": "Đang xử lý",
+    "resolved": "Đã đóng"
+  },
+  "resolution": {
+    "pack_swapped": "Đã đổi pin",
+    "manager_closed": "Quản lý đóng"
+  },
+  "label": {
+    "confirmed": "Đã xác nhận: cảnh báo đúng",
+    "false_alarm": "Đã đánh dấu: báo nhầm"
+  },
+  "timeline": {
+    "opened": "Mở sự cố, mức {{level}}",
+    "escalated": "Tăng lên mức {{level}}",
+    "driver_notified": "Đã gửi thông báo cho tài xế",
+    "driver_confirmed": "Tài xế đã bấm xác nhận",
+    "acknowledged": "{{by}} tiếp nhận",
+    "driver_called": "{{by}} gọi cho tài xế",
+    "bms_limit": "Nhiệt độ chạm ngưỡng ngắt của BMS",
+    "risk_normalised": "Rủi ro đã trở về mức an toàn",
+    "pack_swapped": "Đã đổi pin {{pack}} tại {{station}}",
+    "resolved": "Đóng sự cố"
+  },
+  "kpi": {
+    "online": "Xe trực tuyến",
+    "unacknowledged": "Chưa tiếp nhận",
+    "openOf": "{{n}} sự cố đang mở",
+    "ack": "Phản hồi (trung vị)",
+    "ackHint": "phút từ cảnh báo đến lúc tiếp nhận",
+    "maintenance": "Pin cần thay",
+    "labeled": "{{pct}}% cảnh báo đã gắn nhãn",
+    "labeledNone": "chưa có cảnh báo nào đóng",
+    "openIncidents": "Sự cố đang mở",
+    "notifications": "Thông báo đã gửi",
+    "minutes": "{{n}} phút"
+  },
+  "overview": {
+    "kicker": "Voltify · B2B, API + webhook",
+    "headline": "Cảnh báo sớm rủi ro cháy nổ pin xe máy điện, hiện ngay trong app tài xế đang dùng.",
+    "sub": "Voltify nhận telemetry pin từ hãng xe hoặc đội xe, AI tính rủi ro và giải thích lý do, rồi gửi webhook để app của đối tác báo cho tài xế bằng lời dễ hiểu. Quản lý đội xe theo dõi tất cả trên một màn hình.",
+    "ctaDriver": "Xem app tài xế",
+    "ctaConsole": "Mở trung tâm điều hành",
+    "flowTitle": "Voltify nằm ở đâu trong hệ thống của đối tác",
+    "flow": {
+      "bms": {
+        "title": "Pin + BMS",
+        "body": "Điện áp từng cell, dòng, nhiệt độ, SOC"
+      },
+      "vendor": {
+        "title": "Máy chủ hãng xe / đội xe",
+        "body": "Gom dữ liệu, mỗi hãng một định dạng"
+      },
+      "voltify": {
+        "title": "Voltify API + AI",
+        "body": "Chuẩn hóa, tính Risk Score, mở sự cố"
+      },
+      "webhook": {
+        "title": "Webhook có chữ ký",
+        "body": "Sự kiện + nội dung thông báo 2 ngôn ngữ"
+      },
+      "partner": {
+        "title": "App của đối tác",
+        "body": "Hiển thị trạng thái pin, đẩy thông báo"
+      },
+      "driver": {
+        "title": "Tài xế + quản lý",
+        "body": "Biết phải làm gì; quản lý xử lý trên console"
+      }
+    },
+    "flowNote": "Đối tác không phải xây AI hay hiểu số liệu pin: họ gửi dữ liệu và nhận về câu cần hiển thị. Dashboard web dành cho quản lý đội xe và để demo.",
+    "cards": {
+      "driver": {
+        "title": "App tài xế",
+        "body": "Điện thoại mô phỏng một app đối tác có Voltify bên trong: pin còn bao nhiêu, đi được bao xa, khi nào phải đổi pin hay dừng xe."
+      },
+      "console": {
+        "title": "Trung tâm điều hành",
+        "body": "Bản đồ 40 xe ở TP.HCM, hàng đợi sự cố theo mức nguy hiểm, lý do của AI, và nút tiếp nhận, gọi tài xế, đóng có gắn nhãn."
+      },
+      "integration": {
+        "title": "Tích hợp API",
+        "body": "Các endpoint, webhook có chữ ký HMAC, luồng sự kiện trực tiếp và đoạn code mẫu cho lập trình viên của đối tác."
+      }
+    },
+    "open": "Mở",
+    "scriptTitle": "Kịch bản demo 3 phút",
+    "script": [
+      "Mở App tài xế: pin bình thường, tài xế chỉ thấy % pin, số km và chữ “Bình thường”.",
+      "Bấm “Gây sự cố: đoản mạch ngầm” ở tốc độ 20× hoặc 60×. Khi thông báo hiện ra, bấm tạm dừng (hoặc về 5×) để giải thích.",
+      "Sau vài chục giây: điện thoại hiện thông báo đẩy “Pin cần được kiểm tra” kèm trạm đổi pin gần nhất.",
+      "Nếu không phản ứng, rủi ro tăng lên Nguy hiểm: màn hình cảnh báo đỏ “Dừng xe ngay”.",
+      "Mở Trung tâm điều hành: sự cố nằm đầu hàng đợi, có lý do, có trạng thái “đã báo tài xế”. Bấm Tiếp nhận, Gọi tài xế, rồi Đóng kèm nhãn.",
+      "Mở Tích hợp API: chỉ cho khách thấy webhook họ sẽ nhận."
+    ],
+    "honestTitle": "Nói rõ để giữ uy tín",
+    "honest": [
+      "Toàn bộ dữ liệu là mô phỏng; nhóm chưa có đội xe thật chia sẻ dữ liệu. MVP này để thuyết phục đơn vị đầu tiên chạy pilot.",
+      "AI đạt Recall 91,9%, Precision 65,8% và lead time trung bình 19,3 phút trên dữ liệu mô phỏng của PoC; mục tiêu 30 đến 45 phút chưa đạt.",
+      "Voltify không điều khiển xe; MVP chỉ giám sát và cảnh báo. Voltify hỗ trợ, không thay thế BMS.",
+      "Quãng đường còn lại là ước tính (giả định 22 Wh/km)."
+    ]
+  },
+  "integration": {
+    "title": "Tích hợp: đối tác kết nối Voltify thế nào",
+    "intro": "Voltify là API. Đối tác gửi telemetry pin, nhận lại sự cố và thông báo cho tài xế qua webhook. Mọi thứ trên trang này cũng chạy được trên máy chủ thật (thư mục api/ trong repo).",
+    "source": "Nguồn dữ liệu của trang",
+    "usingBrowser": "Đang chạy trong trình duyệt (Web Worker)",
+    "usingApi": "Đang kết nối máy chủ API {{url}}",
+    "sourceHint": "Mặc định trang tự mô phỏng trong trình duyệt nên không cần máy chủ. Khi chạy `npm run dev:api`, nhập địa chỉ máy chủ để trang dùng đúng API mà đối tác sẽ dùng (REST + Server-Sent Events).",
+    "connect": "Kết nối",
+    "useBrowser": "Dùng lại chế độ trình duyệt",
+    "endpoints": "Các endpoint chính",
+    "ep": {
+      "telemetry": "Gửi telemetry (1 gói hoặc nhiều gói); tự nhận diện định dạng hãng",
+      "registerVehicle": "Đăng ký xe, tài xế và pin đang lắp",
+      "pack": "Báo đã đổi pin",
+      "driverView": "Trạng thái pin rút gọn cho app tài xế",
+      "incidents": "Danh sách sự cố, nặng nhất trước",
+      "ack": "Quản lý tiếp nhận sự cố",
+      "resolve": "Đóng sự cố, gắn nhãn đúng/nhầm",
+      "notificationAck": "App báo tài xế đã bấm vào thông báo",
+      "webhooks": "Đăng ký URL nhận sự kiện (trả về khóa ký)",
+      "stream": "Luồng dữ liệu trực tiếp (Server-Sent Events)",
+      "openapi": "Mô tả API theo chuẩn OpenAPI 3.1"
+    },
+    "auth": "Xác thực bằng header x-api-key. Webhook có header Voltify-Signature (HMAC-SHA256) để đối tác kiểm tra đúng là Voltify gửi; gửi lỗi sẽ thử lại sau 1, 5 và 20 giây.",
+    "feed": "Sự kiện webhook trực tiếp",
+    "feedHint": "bấm một dòng để xem JSON",
+    "sendTelemetry": "Gửi telemetry (curl)",
+    "receive": "Nhận webhook (phía đối tác)"
+  }
+}

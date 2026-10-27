@@ -1,0 +1,22 @@
+{
+  "name": "voltify-mvp",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Voltify MVP: battery fire-risk alerts embedded in partner apps (API + webhook), with a simulated driver app and a fleet-manager console.",
+  "type": "module",
+  "workspaces": [
+    "shared",
+    "api",
+    "web"
+  ],
+  "scripts": {
+    "dev": "npm run dev -w web",
+    "dev:api": "npm run dev -w api",
+    "build": "npm run typecheck -w shared && npm run typecheck -w api && npm run build -w web",
+    "test": "npm test -w shared && npm test -w api",
+    "start:api": "npm start -w api"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  }
+}
