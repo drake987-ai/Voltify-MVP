@@ -1,5 +1,7 @@
 # Voltify MVP
 
+**Bản chạy thử trực tuyến:** https://drake987-ai.github.io/Voltify-MVP/ (mã nguồn: https://github.com/drake987-ai/Voltify-MVP)
+
 Web MVP của **Voltify**: cảnh báo sớm rủi ro cháy nổ pin xe máy điện, hiện ngay trong app mà tài xế đang dùng. Voltify là sản phẩm **B2B**: đối tác (hãng xe, đơn vị giao hàng, mạng lưới trạm đổi pin) gửi telemetry pin qua **API**, Voltify chạy AI rồi gửi **webhook** để app của đối tác báo cho tài xế. Web này mô phỏng đúng trải nghiệm đó để đi thuyết phục đơn vị đội xe đầu tiên chạy pilot.
 
 > *English, in one line:* a monorepo with the Voltify partner API (Fastify), the AI engine reused from the PoC, and a React web app showing a simulated driver app with Voltify inside and a fleet-manager console. All data is simulated until a pilot fleet shares real telemetry.
